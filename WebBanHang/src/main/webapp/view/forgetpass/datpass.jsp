@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div class="_4-u5 _30ny" style="margin-top: 196px;">
-		<form method="post" action="/updatepassword" onsubmit="" id="u_0_a_oY">
+		<form method="post" action="/account/updatepassword" onsubmit="" id="u_0_a_oY">
 			<div class="mvl ptm uiInterstitial _9np_ uiInterstitialLarge uiBoxWhite">
 				<div class="uiHeader uiHeaderBottomBorder mhl mts uiHeaderPage interstitialHeader">
 					<div class="clearfix uiHeaderTop">

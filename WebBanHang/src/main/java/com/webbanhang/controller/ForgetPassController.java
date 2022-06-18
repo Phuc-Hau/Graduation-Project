@@ -79,7 +79,7 @@ public class ForgetPassController {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		return "";
+		return "redirect:/account/signin";
 	}
 
 	

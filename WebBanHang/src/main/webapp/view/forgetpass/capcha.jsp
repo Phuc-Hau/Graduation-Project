@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="_4-u5 _30ny" style="margin-top: 196px;">
-		<form method="post" action="/datpassword" onsubmit="" id="u_0_a_10">
+		<form method="post" action="/account/datpassword" onsubmit="" id="u_0_a_10">
 			
 			<div class="mvl ptm uiInterstitial _9np_ uiInterstitialLarge uiBoxWhite">
 				<div class="uiHeader uiHeaderBottomBorder mhl mts uiHeaderPage interstitialHeader">

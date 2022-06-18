@@ -11,9 +11,7 @@ import java.sql.Timestamp;
 import java.util.List;
 
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
+
 @Entity
 @Table(name="Orders")
 public class Order {
@@ -40,5 +38,54 @@ public class Order {
 	@JoinColumn(name="Customer_id")
 	private Cutomer cutomer;
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Timestamp getDate() {
+		return date;
+	}
+
+	public void setDate(Timestamp date) {
+		this.date = date;
+	}
+
+	public boolean isStatus() {
+		return status;
+	}
+
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+
+	public double getTotalmoney() {
+		return totalmoney;
+	}
+
+	public void setTotalmoney(double totalmoney) {
+		this.totalmoney = totalmoney;
+	}
+
+	public List<OrderDetail> getOrderDetails() {
+		return orderDetails;
+	}
+
+	public void setOrderDetails(List<OrderDetail> orderDetails) {
+		this.orderDetails = orderDetails;
+	}
+
+	public Cutomer getCutomer() {
+		return cutomer;
+	}
+
+	public void setCutomer(Cutomer cutomer) {
+		this.cutomer = cutomer;
+	}
+
+	
 
 }

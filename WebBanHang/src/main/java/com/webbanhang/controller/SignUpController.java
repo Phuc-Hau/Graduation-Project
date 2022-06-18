@@ -82,7 +82,7 @@ public class SignUpController {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-			return "redirect:/dangnhap";
+			return "redirect:/account/signin";
 		} else {
 			model.addAttribute("message", "Sai mã xác thực không chính xác!");
 			return "user/capchasignup";

@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div class="_4-u5 _30ny" id="login_help" style="margin-top: 196px;">
-		<form rel="async" id="identify_yourself_flow" action="forgetmail" method="post" onsubmit = "return validateForm()">
+		<form rel="async" id="identify_yourself_flow" action="/account/forgetmail" method="post" onsubmit = "return validateForm()">
 			<div class="mvl ptm uiInterstitial _9np_ uiInterstitialLarge uiBoxWhite">
 				<div class="uiHeader uiHeaderBottomBorder mhl mts uiHeaderPage interstitialHeader">
 					<div class="clearfix uiHeaderTop">

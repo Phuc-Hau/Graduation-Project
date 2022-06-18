@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div class="_4-u5 _30ny" style="margin-top: 196px;">
-		<form rel="async" method="post" action="/fpoly/oe/capcha" onsubmit="" id="u_0_a_VN">
+		<form rel="async" method="post" action="/account/accountcapcha" onsubmit="" id="u_0_a_VN">
 			<div class="mtl mbm ptm uiInterstitial _9np_ uiInterstitialLarge uiBoxWhite" id="initiate_interstitial">
 				<div class="uiHeader uiHeaderBottomBorder mhl mts uiHeaderPage interstitialHeader">
 					<div class="clearfix uiHeaderTop">
