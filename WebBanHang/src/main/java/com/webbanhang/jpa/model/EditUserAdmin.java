@@ -1,9 +1,5 @@
-package com.webbanhang.model;
+package com.webbanhang.jpa.model;
 
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 
 public class EditUserAdmin {
