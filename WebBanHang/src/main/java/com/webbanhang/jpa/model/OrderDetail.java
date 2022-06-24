@@ -1,18 +1,10 @@
-package com.webbanhang.model;
-
-import java.util.List;
+package com.webbanhang.jpa.model;
 
 import javax.persistence.*;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-
-
 @Entity
-@Table(name = "Orderdetail")
+@Table(name = "[Orderdetail]")
 public class OrderDetail {
 
 	@Id 

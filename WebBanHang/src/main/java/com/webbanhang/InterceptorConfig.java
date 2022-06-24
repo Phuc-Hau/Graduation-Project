@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import com.webbanhang.impl.UserDao;
+import com.webbanhang.jpa.dao.UserDao;
 import com.webbanhang.service.CookieService;
 import com.webbanhang.service.SessionService;
 

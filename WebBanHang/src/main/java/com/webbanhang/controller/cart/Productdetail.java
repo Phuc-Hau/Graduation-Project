@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.webbanhang.impl.OrderDetailDao;
-import com.webbanhang.impl.ProductDao;
-import com.webbanhang.model.OrderDetail;
-import com.webbanhang.model.User;
+import com.webbanhang.jpa.dao.OrderDetailDao;
+import com.webbanhang.jpa.dao.ProductDao;
+import com.webbanhang.jpa.model.OrderDetail;
+import com.webbanhang.jpa.model.User;
 import com.webbanhang.service.SessionService;
 
 

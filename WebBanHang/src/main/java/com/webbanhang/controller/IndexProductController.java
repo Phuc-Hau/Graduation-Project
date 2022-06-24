@@ -3,25 +3,22 @@ package com.webbanhang.controller;
 
 import java.util.List;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.webbanhang.impl.OrderDetailDao;
-import com.webbanhang.impl.ProductDao;
-import com.webbanhang.impl.UserDao;
-import com.webbanhang.model.OrderDetail;
-import com.webbanhang.model.User;
+import com.webbanhang.jpa.dao.OrderDetailDao;
+import com.webbanhang.jpa.dao.ProductDao;
+import com.webbanhang.jpa.dao.UserDao;
+import com.webbanhang.jpa.model.OrderDetail;
+import com.webbanhang.jpa.model.User;
 import com.webbanhang.service.CookieService;
 import com.webbanhang.service.SessionService;
 
 
 @Controller
-public class ProductController {
+public class IndexProductController {
 	
 	@Autowired
 	ProductDao productDao;

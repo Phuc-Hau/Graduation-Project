@@ -1,9 +1,9 @@
-package com.webbanhang.impl;
+package com.webbanhang.jpa.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.webbanhang.model.User;
+import com.webbanhang.jpa.model.User;
 
 public interface UserDao extends JpaRepository<User, Integer>{
 

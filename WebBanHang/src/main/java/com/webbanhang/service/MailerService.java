@@ -13,7 +13,7 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-import com.webbanhang.model.MailInfo;
+import com.webbanhang.jpa.model.MailInfo;
 import com.webbanhang.utils.*;
 
 @Service

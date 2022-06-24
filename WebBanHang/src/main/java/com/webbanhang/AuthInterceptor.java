@@ -9,9 +9,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.webbanhang.impl.OrderDetailDao;
-import com.webbanhang.impl.UserDao;
-import com.webbanhang.model.User;
+import com.webbanhang.jpa.dao.UserDao;
+import com.webbanhang.jpa.model.User;
 import com.webbanhang.service.CookieService;
 import com.webbanhang.service.SessionService;
 

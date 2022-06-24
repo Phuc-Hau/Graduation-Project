@@ -1,11 +1,6 @@
-package com.webbanhang.model;
+package com.webbanhang.jpa.model;
 
 import javax.persistence.*;
-
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
 import java.util.List;
@@ -13,7 +8,7 @@ import java.util.List;
 
 
 @Entity
-@Table(name="Orders")
+@Table(name="[Orders]")
 public class Order {
 	
 	@Id

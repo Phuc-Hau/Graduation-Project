@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.webbanhang.impl.UserDao;
+import com.webbanhang.jpa.dao.UserDao;
 import com.webbanhang.service.CookieService;
 
 @Controller

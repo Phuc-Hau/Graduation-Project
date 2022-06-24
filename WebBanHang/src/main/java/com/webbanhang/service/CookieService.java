@@ -8,8 +8,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.webbanhang.model.User;
-
 @Service
 public class CookieService {
 

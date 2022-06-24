@@ -1,4 +1,4 @@
-package com.webbanhang.model;
+package com.webbanhang.jpa.model;
 
 import java.sql.Date;
 import java.util.List;
@@ -11,13 +11,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 
 @Entity
-@Table(name = "Product")
+@Table(name = "[Product]")
 public class Product {
 
 	@Id
@@ -39,8 +35,8 @@ public class Product {
 	@Column(name = "Price")
 	private double price;
 
-	@Column(name = "Pricenew")
-	private double pricenew;
+	@Column(name = "Sale")
+	private double sale;
 
 	@Column(name = "Status")
 	private boolean status;
@@ -106,12 +102,12 @@ public class Product {
 		this.price = price;
 	}
 
-	public double getPricenew() {
-		return pricenew;
+	public double getSale() {
+		return sale;
 	}
 
-	public void setPricenew(double pricenew) {
-		this.pricenew = pricenew;
+	public void setSale(double sale) {
+		this.sale = sale;
 	}
 
 	public boolean isStatus() {

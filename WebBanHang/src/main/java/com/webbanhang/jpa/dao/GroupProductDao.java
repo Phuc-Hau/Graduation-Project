@@ -1,8 +1,8 @@
-package com.webbanhang.impl;
+package com.webbanhang.jpa.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.webbanhang.model.GroupProduct;
+import com.webbanhang.jpa.model.GroupProduct;
 
 public interface GroupProductDao extends JpaRepository<GroupProduct, Integer>{
 

@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.webbanhang.impl.CutomerDao;
-import com.webbanhang.impl.UserDao;
-import com.webbanhang.model.Cutomer;
-import com.webbanhang.model.EditUserAdmin;
-import com.webbanhang.model.User;
+import com.webbanhang.jpa.dao.CutomerDao;
+import com.webbanhang.jpa.dao.UserDao;
+import com.webbanhang.jpa.model.Cutomer;
+import com.webbanhang.jpa.model.EditUserAdmin;
+import com.webbanhang.jpa.model.User;
 import com.webbanhang.utils.ConvenientUtils;
 
 @Controller

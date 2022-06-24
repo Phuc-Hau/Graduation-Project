@@ -11,15 +11,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.webbanhang.impl.CutomerDao;
-import com.webbanhang.impl.OrderDao;
-import com.webbanhang.impl.OrderDetailDao;
-import com.webbanhang.impl.ProductDao;
-import com.webbanhang.impl.UserDao;
-import com.webbanhang.model.Order;
-import com.webbanhang.model.OrderDetail;
-import com.webbanhang.model.Product;
-import com.webbanhang.model.User;
+import com.webbanhang.jpa.dao.CutomerDao;
+import com.webbanhang.jpa.dao.OrderDao;
+import com.webbanhang.jpa.dao.OrderDetailDao;
+import com.webbanhang.jpa.dao.ProductDao;
+import com.webbanhang.jpa.dao.UserDao;
+import com.webbanhang.jpa.model.Order;
+import com.webbanhang.jpa.model.OrderDetail;
+import com.webbanhang.jpa.model.Product;
+import com.webbanhang.jpa.model.User;
 import com.webbanhang.service.SessionService;
 
 @Controller
@@ -60,7 +60,7 @@ public class CartController {
 		int amountSum=0;
 		for (OrderDetail orderDetail : list) {
 			priceSum+= (orderDetail.getProduct().getPrice()-orderDetail.getProduct().getPrice()
-					*orderDetail.getProduct().getPricenew())*orderDetail.getQuantity();
+					*orderDetail.getProduct().getSale())*orderDetail.getQuantity();
 			amountSum+=orderDetail.getQuantity();
 		}
 		model.addAttribute("pricesum", priceSum);
@@ -164,7 +164,7 @@ public class CartController {
 		
 		for (OrderDetail orderDetail : list) {
 			priceSum+= (orderDetail.getProduct().getPrice()-orderDetail.getProduct().getPrice()
-					*orderDetail.getProduct().getPricenew())*orderDetail.getQuantity();
+					*orderDetail.getProduct().getSale())*orderDetail.getQuantity();
 			
 		}
 		int idCutomer =user.getCutomer().getId();

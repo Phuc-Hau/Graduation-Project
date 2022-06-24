@@ -1,18 +1,13 @@
-package com.webbanhang.model;
+package com.webbanhang.jpa.model;
 
 import javax.persistence.*;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.sql.Timestamp;
 import java.util.List;
 
 
 
 @Entity
-@Table(name="Cutomers")
+@Table(name="[Cutomers]")
 public class Cutomer {
 	
 

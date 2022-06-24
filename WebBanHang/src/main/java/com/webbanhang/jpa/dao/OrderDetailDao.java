@@ -1,12 +1,11 @@
-package com.webbanhang.impl;
+package com.webbanhang.jpa.dao;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.webbanhang.model.OrderDetail;
-import com.webbanhang.model.User;
+import com.webbanhang.jpa.model.OrderDetail;
 
 public interface OrderDetailDao extends JpaRepository<OrderDetail, Integer>{
 

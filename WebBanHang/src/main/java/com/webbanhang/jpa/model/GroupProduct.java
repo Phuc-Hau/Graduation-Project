@@ -1,18 +1,13 @@
-package com.webbanhang.model;
+package com.webbanhang.jpa.model;
 
 import javax.persistence.*;
-
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 
 
 @Entity
-@Table(name = "Groupproduct")
+@Table(name = "[Groupproduct]")
 public class GroupProduct{
 
 	@Id

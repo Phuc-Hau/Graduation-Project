@@ -2,7 +2,7 @@ package com.webbanhang.utils;
 
 import javax.mail.MessagingException;
 
-import com.webbanhang.model.MailInfo;
+import com.webbanhang.jpa.model.MailInfo;
 
 public interface MailerServiceUtils {
 	

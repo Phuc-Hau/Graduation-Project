@@ -57,7 +57,7 @@
 								<td>${item.name}</td>
 								<td>${item.amount }</td>
 								<td>${item.price }đ</td>
-								<td class="text-danger">${item.pricenew }<i
+								<td class="text-danger">${item.sale }<i
 									class="mdi mdi-arrow-down"></i></td>
 								<td>27/10/2022</td>
 								<td><c:choose>

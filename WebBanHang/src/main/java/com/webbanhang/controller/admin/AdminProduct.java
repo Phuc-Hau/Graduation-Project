@@ -10,12 +10,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.webbanhang.impl.GroupProductDao;
-import com.webbanhang.impl.ProductDao;
-import com.webbanhang.model.GroupProduct;
-import com.webbanhang.model.Product;
-import com.webbanhang.model.User;
-import com.webbanhang.service.SessionService;
+import com.webbanhang.jpa.dao.GroupProductDao;
+import com.webbanhang.jpa.dao.ProductDao;
+import com.webbanhang.jpa.model.GroupProduct;
+import com.webbanhang.jpa.model.Product;
 
 @Controller
 @RequestMapping("/admin")

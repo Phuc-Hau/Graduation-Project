@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.webbanhang.impl.UserDao;
-import com.webbanhang.model.User;
+import com.webbanhang.jpa.dao.UserDao;
+import com.webbanhang.jpa.model.User;
 import com.webbanhang.utils.ConvenientUtils;
 import com.webbanhang.utils.MailerServiceUtils;
 

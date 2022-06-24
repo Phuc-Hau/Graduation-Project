@@ -1,13 +1,7 @@
-package com.webbanhang.model;
+package com.webbanhang.jpa.model;
 
 
 import javax.persistence.*;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-
 
 @Entity
 @Table(name = "[User]")
