@@ -1,3 +1,4 @@
+
 package com.webbanhang.jpa.model;
 public class MailInfo {
 	String from;
