@@ -47,7 +47,8 @@ public class AdminUser {
 			@ModelAttribute("edituser") EditUserAdmin edituser) {
 		User user = userDao.getById(id);
 		Cutomer cutomer = cutomerDao.getById(user.getCutomer().getId());
-		edituser = new EditUserAdmin(user, cutomer);
+		edituser.setUser(user);
+		edituser.setCutomer(cutomer);
 		model.addAttribute("edituser", edituser);
 		return "admin/AdminUserEdit";
 	}
@@ -73,6 +74,6 @@ public class AdminUser {
 			e.printStackTrace();
 		}
 		
-		return "redirect:/admin/user/edit/"+edituser.getIduser();
+		return "redirect:/admin/user/edit/"+edituser.getUser().getId();
 	}
 }

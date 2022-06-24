@@ -1,4 +1,4 @@
-package com.webbanhang.controller;
+package com.webbanhang.controller.user;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

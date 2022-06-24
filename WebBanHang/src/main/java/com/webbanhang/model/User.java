@@ -104,6 +104,4 @@ public class User {
 		this.cutomer = cutomer;
 	}
 
-	
-
 }

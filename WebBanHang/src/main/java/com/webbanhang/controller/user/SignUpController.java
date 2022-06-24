@@ -1,4 +1,4 @@
-package com.webbanhang.controller;
+package com.webbanhang.controller.user;
 
 
 import javax.mail.MessagingException;

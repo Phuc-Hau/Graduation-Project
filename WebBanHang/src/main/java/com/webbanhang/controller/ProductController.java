@@ -19,9 +19,7 @@ import com.webbanhang.model.User;
 import com.webbanhang.service.CookieService;
 import com.webbanhang.service.SessionService;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
+
 @Controller
 public class ProductController {
 	

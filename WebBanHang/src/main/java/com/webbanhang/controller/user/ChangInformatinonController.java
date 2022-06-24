@@ -1,4 +1,4 @@
-package com.webbanhang.controller;
+package com.webbanhang.controller.user;
 
 import java.util.List;
 
@@ -22,7 +22,7 @@ import com.webbanhang.service.SessionService;
 import com.webbanhang.utils.ConvenientUtils;
 
 @Controller
-@RequestMapping("account")
+@RequestMapping("/account")
 public class ChangInformatinonController {
 	@Autowired
 	UserDao userDao;
@@ -46,9 +46,11 @@ public class ChangInformatinonController {
 			List<OrderDetail> list = orderDetailDao.findAllUsername(user.getCutomer().getId());
 			model.addAttribute("amountcart", list.size());
 		}
-		
-		edituser = new EditUserAdmin(user,user.getCutomer());
-		
+		Cutomer cutomer = cutomerDao.getById(user.getCutomer().getId());
+
+		edituser.setUser(user);
+		edituser.setCutomer(cutomer);
+
 		model.addAttribute("edituser",edituser);
 		
 		return "user/ChangInformation";

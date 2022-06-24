@@ -1,4 +1,4 @@
-package com.webbanhang.controller;
+package com.webbanhang.controller.cart;
 
 import java.util.List;
 
@@ -35,7 +35,7 @@ public class Productdetail {
 	}
 	
 	@GetMapping("/product/sale/{id}")
-	public String doGetFL(@PathVariable int id, Model model) {
+	public String doGetFL(@PathVariable("id") int id, Model model) {
 		User user =session.get("user");
 		if(user !=null) {
 			List<OrderDetail> list = orderDetailDao.findAllUsername(user.getCutomer().getId());
@@ -46,7 +46,7 @@ public class Productdetail {
 	}
 	
 	@GetMapping("/product/sanpham/{id}")
-	public String doGetXH(@PathVariable int id,  Model model) {
+	public String doGetXH(@PathVariable("id") int id,  Model model) {
 		User user =session.get("user");
 		if(user !=null) {
 			List<OrderDetail> list = orderDetailDao.findAllUsername(user.getCutomer().getId());

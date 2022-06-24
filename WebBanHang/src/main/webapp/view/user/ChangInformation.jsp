@@ -71,7 +71,7 @@
 									</div>
 									<div class="avatar-preview" style="right: 180px; top: 50px;">
 										<img width="200px" height="200px" id="imageResult"
-											src="/file/user/${edituser.img }" alt=""> <label
+											src="/file/user/${user.img }" alt=""> <label
 											style="margin-top: 25px; margin-left: 26px;" for="upload">Upload
 											ảnh đại diện</label>
 									</div>
@@ -85,7 +85,7 @@
 										<div class="form-group row">
 											<label class="col-sm-3 col-form-label">User Name</label>
 											<div class="col-sm-9">
-												<span class="form-control">${edituser.username}</span>
+												<span class="form-control">${user.username}</span>
 											</div>
 										</div>
 									</div>
