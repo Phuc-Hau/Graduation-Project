@@ -1,14 +1,7 @@
 package com.webbanhang.jpa.model;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-
-
+import javax.persistence.*;
 
 
 @Entity
@@ -16,6 +9,7 @@ import javax.persistence.Table;
 public class Img {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="ID")
 	private int id;
 

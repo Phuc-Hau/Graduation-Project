@@ -106,7 +106,7 @@
 											</div>
 											<div class="col-md-3 col-lg-3 col-xl-3">
 												<h6 class="text-black">${item.product.name}</h6>
-												<h6 class="text-muted mb-0">${item.product.price-item.product.price*item.product.pricenew} VND</h6>
+												<h6 class="text-muted mb-0">${item.product.price-item.product.price*item.product.sale} VND</h6>
 											</div>
 											
 											<div class="col-md-3 col-lg-3 col-xl-2 d-flex">
@@ -123,7 +123,7 @@
 												
 											</div>
 											<div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-												<h6 class="mb-0">${item.quantity*(item.product.price-(item.product.price*item.product.pricenew)) } VND</h6>
+												<h6 class="mb-0">${item.quantity*(item.product.price-(item.product.price*item.product.sale)) } VND</h6>
 											</div>
 											<div class="col-md-1 col-lg-1 col-xl-1 text-end">
 												<button style="border: none; background: white;" type="submit" formaction="/account/cart/delete" class="text-muted">

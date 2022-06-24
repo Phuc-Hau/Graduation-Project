@@ -11,6 +11,7 @@ import java.util.List;
 public class GroupProduct{
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="ID")
 	private int id;
 

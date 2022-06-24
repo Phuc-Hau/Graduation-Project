@@ -107,7 +107,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 				<h3>Giá sản phẩm</h3>
 				<h3 class="line-through font-weight-semi-bold mb-4">${chitiet.price }</h3>
 				<h3>Giá sale</h3>
-				<h3 class=" font-weight-semi-bold mb-4">${chitiet.price-(chitiet.pricenew*chitiet.price) }</h3>
+				<h3 class=" font-weight-semi-bold mb-4">${chitiet.price-(chitiet.sale*chitiet.price) }</h3>
 				
 					
 				<form action="/account/newcart" method="post">

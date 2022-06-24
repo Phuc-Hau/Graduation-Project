@@ -13,7 +13,8 @@ import lombok.NoArgsConstructor;
 @Table(name = "[Orderdetail]")
 public class OrderDetail {
 
-	@Id 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="Id")
 	private int id;
 
