@@ -3,9 +3,6 @@ package com.webbanhang.controller;
 
 import java.util.List;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,7 +18,7 @@ import com.webbanhang.service.SessionService;
 
 
 @Controller
-public class ProductController {
+public class IndexProductController {
 	
 	@Autowired
 	ProductDao productDao;
