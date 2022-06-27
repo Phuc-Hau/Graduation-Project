@@ -23,7 +23,7 @@
 <!-- End layout styles -->
 <link rel="shortcut icon" href="/assets/images/favicon.ico" />
 
-<link rel="stylesheet" href="/css/buttonUpload.css">
+<link rel="stylesheet" href="/assets/css/buttonUpload.css">
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet"
@@ -32,7 +32,7 @@
 	crossorigin="anonymous">
 
 <!-- CSS -->
-<link rel="stylesheet" href="/css/sach.css">
+<link rel="stylesheet" href="/assets/css/sach.css">
 
 </head>
 <body>

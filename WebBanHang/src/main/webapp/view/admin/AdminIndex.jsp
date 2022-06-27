@@ -47,7 +47,6 @@
 	<script src="/assets/js/jquery.cookie.js" type="text/javascript"></script>
 
 	<script src="/assets/js/off-canvas.js"></script>
-	<script src="/assets/js/hoverable-collapse.js"></script>
 	<script src="/assets/js/misc.js"></script>
 
 	<script src="/js/datamonth.js" defer></script>

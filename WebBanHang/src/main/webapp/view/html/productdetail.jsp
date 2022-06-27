@@ -13,8 +13,7 @@
 <!-- Google Fonts Roboto -->
 <link rel="stylesheet"
 	href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
-<!-- MDB -->
-<link rel="stylesheet" href="css/bootstrap-shopping-carts.min.css" />
+
 </head>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet"
@@ -23,7 +22,7 @@
 	crossorigin="anonymous">
 
 <!-- CSS -->
-<link rel="stylesheet" href="/css/sach.css">
+<link rel="stylesheet" href="/assets/css/sach.css">
 
 <style>
 .btn-primary {

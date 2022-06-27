@@ -34,7 +34,7 @@ body {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- CSS -->
-<link rel="stylesheet" href="/css/sach.css">
+<link rel="stylesheet" href="/assets/css/sach.css">
 
 <!-- JS -->
 <script src="/js/app.js"></script>

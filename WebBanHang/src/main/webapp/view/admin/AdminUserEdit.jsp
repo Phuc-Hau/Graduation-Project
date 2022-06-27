@@ -30,7 +30,7 @@
 			<!-- body -->
 			<div class="main-panel">
 				<!-- body:home.jsp -->
-				<jsp:include page="/view/admin/body/tablelist/edituser.jsp"></jsp:include>
+				<jsp:include page="/view/admin/body/edituser.jsp"></jsp:include>
 				
 				<!-- partial:partials/_footer.html -->
 				<jsp:include page="/view/admin/partials/footer.jsp"></jsp:include>

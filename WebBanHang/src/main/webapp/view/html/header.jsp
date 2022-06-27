@@ -61,7 +61,7 @@
                 <path
                   d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
               </svg>
-              <svg style="    position: absolute;  right: 17px;  top: 11; top: 13px;" xmlns="http://www.w3.org/2000/svg"
+              <svg style="    position: absolute;  right: 17px;  top: 11px; top: 13px;" xmlns="http://www.w3.org/2000/svg"
                 width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
@@ -192,38 +192,6 @@
           </a>
         </div>
 
-        <div class="col-sm-3">
-          <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-            aria-controls="collapseExample">
-            <div class="gio lan">
-              <div>
-                <img src="/image/VN.gif" alt="" style="width: 45px; position: absolute; top: 10px; left: 11px;">
-              </div>
-              <svg style="    position: absolute;  right: 5px;  top: 10; top: 16px;" xmlns="http://www.w3.org/2000/svg"
-                width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-              </svg>
-            </div>
-          </a>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body"
-              style="z-index: 999; width: 100px; top: 102px;padding: 8px; border-radius: 10px; right: 18px;">
-              <div class=" language" style="margin-bottom: 5px;
-                background-color: #F2F4F5;
-                border-radius: 5px;
-                padding: 4px;">
-                <img src="/image/VN.gif" alt="" style="width: 45px; top: 10px; left: 11px;">
-                VN
-              </div>
-              <div class=" language" style="border-radius: 5px;padding: 4px;">
-              <img src="/image/English.gif" alt="" style="width: 45px; top: 10px; left: 11px;">
-                UK
-              </div>
-            </div>
-
-          </div>
-        </div>
       </div>
     </div>
   </header>

@@ -29,7 +29,7 @@
 			<!-- body -->
 			<div class="main-panel">
 				<!-- body:home.jsp -->
-				<jsp:include page="/view/admin/body/tablelist/listuser.jsp"></jsp:include>
+				<jsp:include page="/view/admin/body/listuser.jsp"></jsp:include>
 				
 				<!-- partial:partials/_footer.html -->
 				<jsp:include page="/view/admin/partials/footer.jsp"></jsp:include>

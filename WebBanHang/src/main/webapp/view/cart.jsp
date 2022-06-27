@@ -31,7 +31,7 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
 	<!-- CSS -->
-<link rel="stylesheet" href="/css/sach.css">
+<link rel="stylesheet" href="/assets/css/sach.css">
 
 	<style>
 @media ( min-width : 1025px) {

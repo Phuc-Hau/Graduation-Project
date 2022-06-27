@@ -53,7 +53,7 @@
 							<div class="form-group row">
 								<label class="col-sm-3 col-form-label">Sale</label>
 								<div class="col-sm-9">
-									<form:input path="pricenew" min="0" type="number"
+									<form:input path="sale" min="0" type="number"
 										class="form-control" />
 								</div>
 							</div>
