@@ -36,7 +36,7 @@
 
 </head>
 <body>
- <jsp:include page="/view/html/header.jsp"></jsp:include>
+ <jsp:include page="/view/partials/header.jsp"></jsp:include>
 
 	<div class="content-wrapper">
 		<div class="page-header">
@@ -234,6 +234,6 @@
 	<script src="/assets/js/hoverable-collapse.js"></script>
 	<script src="/assets/js/misc.js"></script>
 
-  <jsp:include page="/view/html/footer.jsp"></jsp:include>
+  <jsp:include page="/view/partials/footer.jsp"></jsp:include>
 </body>
 </html>

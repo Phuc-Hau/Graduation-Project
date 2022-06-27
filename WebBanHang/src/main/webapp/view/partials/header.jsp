@@ -87,14 +87,6 @@
                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
             </svg>
           </span>
-
-          <div class="till">
-            <a href="#">Chính trị – pháp luật</a>
-            <a href="#">Khoa học công nghệ – Kinh tế</a>
-            <a href="#">Giáo trình</a>
-            <a href="#">Truyện, tiểu thuyết</a>
-            <a href="#">Sách thiếu nhi</a>
-          </div>
         </form>
 
 
@@ -107,12 +99,11 @@
                 <div style="max-height: 612px; overflow: auto;">
                   <div style="margin-bottom: 10px; display: flex;" class="gh">
 
-                    <div><img src="/image/sach/" alt="" height="100px"></div>
+                    <div><img src="" alt="" height="100px"></div>
                     <div class="ghtitle">{{ser.title}}</div>
-                    <div style="margin-top: 14px; color: red; font-weight: bolder; width: 90px;">
-                      {{ser.price|numbers:3}}đ</div>
-                      
-                    <a style="color: black; margin-top: 14px;" href="" ng-click="new(ser.title)">Them</a>
+                    <div style="margin-top: 14px; color: red; font-weight: bolder; width: 90px;"> {{ser.price|numbers:3}}đ</div>
+
+                    <a style="color: black; margin-top: 14px;" href="" >Them</a>
 
                   </div>
                 </div>
@@ -193,6 +184,10 @@
         </div>
 
       </div>
+    </div>
+
+    <div style="background-color: white; height: 30px; margin-top: 10px">
+
     </div>
   </header>
     

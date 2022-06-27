@@ -15,7 +15,7 @@
 
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="shortcut icon" href="/assets/images/favicon.ico" />
-<link rel="stylesheet" href="/css/buttonUpload.css">
+<link rel="stylesheet" href="/assets/css/buttonUpload.css">
 
 <body>
 	<div class="container-scroller">

@@ -9,8 +9,7 @@
 <title>Insert title here</title>
 </head>
 
-<link rel="stylesheet"
-	href="/assets/vendors/mdi/css/materialdesignicons.min.css">
+<link rel="stylesheet" href="/assets/vendors/mdi/css/materialdesignicons.min.css">
 <link rel="stylesheet"
 	href="/assets/vendors/css/vendor.bundle.base.css">
 
@@ -51,6 +50,7 @@
 
 	<script src="/js/datamonth.js" defer></script>
 	<script src="/assets/js/chart.js" defer></script>
+
 	
 	
 </body>
