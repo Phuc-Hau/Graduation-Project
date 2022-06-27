@@ -62,28 +62,28 @@ body {
 <body ng-app="myapp" style="background-color: #efefef;">
 
 	<!-- header -->
-	<jsp:include page="/view/html/header.jsp"></jsp:include>
+	<jsp:include page="/view/partials/header.jsp"></jsp:include>
 
 	<!-- main -->
 	<article>
 		<div style="padding: 0px 148px;">
 			<div class="row">
 				<!-- slideshow-->
-				<jsp:include page="/view/html/slideshow.jsp"></jsp:include>
+				<jsp:include page="/view/partials/slideshow.jsp"></jsp:include>
 			</div>
 
 			<!-- body -->
 			<article>
 				<!--Fash Sale  -->
-				<jsp:include page="/view/html/article/fashsale.jsp"></jsp:include>
+				<jsp:include page="/view/body/fashsale.jsp"></jsp:include>
 				<!-- Xu hướng mua sắm -->
-				<jsp:include page="/view/html/article/xuhuong.jsp"></jsp:include>
+				<jsp:include page="/view/body/xuhuong.jsp"></jsp:include>
 			</article>
 		</div>
 	</article>
 
 	<!-- footer -->
-	<jsp:include page="/view/html/footer.jsp"></jsp:include>
+	<jsp:include page="/view/partials/footer.jsp"></jsp:include>
 
 
 </body>

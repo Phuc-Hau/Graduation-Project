@@ -31,7 +31,7 @@ public class Productdetail {
 	@RequestMapping
 	public String d (Model model) {
 		
-		return "html/productdetail";	
+		return "cart/productdetail";
 	}
 	
 	@GetMapping("/product/sale/{id}")
@@ -42,7 +42,7 @@ public class Productdetail {
 			model.addAttribute("amountcart", list.size());
 		}
 		model.addAttribute("chitiet",productDao.getById(id));
-		return "html/productdetail";
+		return "cart/productdetail";
 	}
 	
 	@GetMapping("/product/sanpham/{id}")
@@ -53,6 +53,6 @@ public class Productdetail {
 			model.addAttribute("amountcart", list.size());
 		}
 		model.addAttribute("chitiet",productDao.getById(id));
-		return "html/productdetail";
+		return "cart/productdetail";
 	}
 }

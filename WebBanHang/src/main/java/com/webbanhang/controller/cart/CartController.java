@@ -74,7 +74,7 @@ public class CartController {
 		}
 		priceSum=0;
 		amountSum=0;
-		return "cart";
+		return "cart/cart";
 	}
 	
 	@PostMapping("/cart/{p}")

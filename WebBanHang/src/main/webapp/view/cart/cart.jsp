@@ -74,7 +74,7 @@
 <body style="background: white;">
 
 	<!-- header -->
-	<jsp:include page="/view/html/header.jsp"></jsp:include>
+	<jsp:include page="/view/partials/header.jsp"></jsp:include>
 
 	<section class="h-100 h-custom" style="background-color: #d2c9ff;">
 		<div class="container py-5 h-100">
@@ -190,7 +190,7 @@
 	</section>
 
 	<!-- footer -->
-	<jsp:include page="/view/html/footer.jsp"></jsp:include>
+	<jsp:include page="/view/partials/footer.jsp"></jsp:include>
 
 
 
