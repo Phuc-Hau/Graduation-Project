@@ -25,11 +25,11 @@ public class HomeAdmin {
     public String index(Model model) {
 
         List<MoneyMonth> moneyMonth = orderDao.moneyMonthYear(2022);
-        int months[] = new int[13];
+        int months[] = new int[12];
 
-        for (int i = 1; i <= 12; i++) {
+        for (int i = 0; i < 12; i++) {
             for (int j = 0; j < moneyMonth.size(); j++) {
-                if (moneyMonth.get(j).getMonth() == i) {
+                if (moneyMonth.get(j).getMonth() == i+1) {
                     months[i] = (int) moneyMonth.get(j).getMoney();
                     break;
                 } else {

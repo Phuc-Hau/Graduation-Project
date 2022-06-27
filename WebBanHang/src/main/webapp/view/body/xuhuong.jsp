@@ -43,16 +43,16 @@
 		class="controllxuhuong">
 		<nav aria-label="Page navigation example">
 			<ul class="pagination justify-content-center">
-				<li class="page-item"><a class="page-link" ng-click="prev()"
+				<li class="page-item"><a class="page-link"
 					href="#">Previous</a></li>
 
 				<li class="page-item  {{getPageCount==$index+1}}"
-					ng-init="gu={{getPageCount==$index+1}}" ng-repeat="i in Countpage ">
-					<a class="page-link" href="#" ng-click="getPage($index+1)">
+					>
+					<a class="page-link" href="#">
 						{{gu}}{{$index+1}} </a>
 				</li>
 
-				<li class="page-item"><a class="page-link" ng-click="next()"
+				<li class="page-item"><a class="page-link"
 					href="#">Next</a></li>
 			</ul>
 		</nav>

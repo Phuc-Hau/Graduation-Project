@@ -78,9 +78,9 @@
       
      	 <!-- search -->
         <form action="" style="position: absolute;  width: 100%;" >
-          <input type="text" ng-model="searchSP" class="ser" placeholder="Tìm kiếm sản phẩm mong muốn...">
+          <input type="text" class="ser" placeholder="Tìm kiếm sản phẩm mong muốn...">
           
-          <span ng-click="sear(searchSP)" class="search btn btn-danger dropdown-toggle" data-toggle="modal" data-target="#sear">
+          <span  class="search btn btn-danger dropdown-toggle" data-toggle="modal" data-target="#sear">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
               viewBox="0 0 16 16">
               <path
