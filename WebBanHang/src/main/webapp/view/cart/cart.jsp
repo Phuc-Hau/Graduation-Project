@@ -110,14 +110,14 @@
 											</div>
 											
 											<div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-												<button type="submit" class="btn btn-link px-2" formaction="/account/cart/pre">
+												<button type="submit" class="btn btn-link px-2" formmethod="get" formaction="/account/cart/pre">
 													<i class="fas fa-minus"></i>
 												</button>
 
 												<input id="form1" style="width: 50px" min="0" name="quantity" value="${item.quantity}"
 													type="number" class="form-control form-control-sm" />
 
-												<button type="submit" class="btn btn-link px-2" formaction="/account/cart/plus">
+												<button type="submit" class="btn btn-link px-2" formmethod="get" formaction="/account/cart/plus">
 													<i class="fas fa-plus"></i>
 												</button>
 												
@@ -141,7 +141,7 @@
 											</h6>
 									</div>
 								</div>
-								<form method="post" action="/account/cart/newpay" class="col-lg-4 bg-grey">
+								<form:form method="post" action="/account/cart/newpay" class="col-lg-4 bg-grey">
 									<div class="p-5">
 										<h3 class="fw-bold mb-5 mt-2 pt-1">Tổng Đơn Hàng</h3>
 										<hr class="my-4">
@@ -180,7 +180,7 @@
 											data-mdb-ripple-color="dark">Đặt Hàng</button>
 
 									</div>
-								</form>
+								</form:form>
 							</div>
 						</div>
 					</div>

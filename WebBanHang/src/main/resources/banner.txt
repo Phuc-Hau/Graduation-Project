@@ -7,4 +7,4 @@
            ****        ****         ********        ***     ***
 
 --------------------------- WebBanHang.com --------------------------
-Spring Boot${spring-boot.formatted-version} :: ${Ansi.DEFAULT}
+Spring Boot${spring-boot.formatted-version}

@@ -24,7 +24,14 @@ public class HomeAdmin {
     @RequestMapping("/index")
     public String index(Model model) {
 
-        List<MoneyMonth> moneyMonth = orderDao.moneyMonthYear(2022);
+
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat();
+        simpleDateFormat.applyPattern("MM");
+        String month = simpleDateFormat.format(new Date());
+        simpleDateFormat.applyPattern("YYYY");
+        String year = simpleDateFormat.format(new Date());
+
+        List<MoneyMonth> moneyMonth = orderDao.moneyMonthYear(Integer.parseInt(year));
         int months[] = new int[12];
 
         for (int i = 0; i < 12; i++) {
@@ -50,15 +57,13 @@ public class HomeAdmin {
             e.printStackTrace();
         }
 
-        Date date = new Date();
+        int sumPriceMonth =0;
+        try {
+            sumPriceMonth = orderDao.sumPriceMonth(Integer.parseInt(month));
+        }catch (Exception e){
+            sumPriceMonth = 0;
+        }
 
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat();
-        simpleDateFormat.applyPattern("MM");
-        String month = simpleDateFormat.format(date);
-        simpleDateFormat.applyPattern("YYYY");
-        String year = simpleDateFormat.format(date);
-
-        int sumPriceMonth = orderDao.sumPriceMonth(Integer.parseInt(month));
         int sumCount = orderDao.sumCountMonth(Integer.parseInt(month));
         int sumPriceYear = orderDao.sumPriceYear(Integer.parseInt(year));
         model.addAttribute("month", month);

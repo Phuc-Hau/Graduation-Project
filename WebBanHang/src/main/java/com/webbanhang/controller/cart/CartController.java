@@ -6,10 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import com.webbanhang.jpa.dao.CutomerDao;
 import com.webbanhang.jpa.dao.OrderDao;
@@ -77,7 +74,7 @@ public class CartController {
 		return "cart/cart";
 	}
 	
-	@PostMapping("/cart/{p}")
+	@GetMapping("/cart/{p}")
 	public String u (Model model,@PathVariable("p")String p,@RequestParam("id") int id) {
 		try {
 		    OrderDetail orderDetail	= orderDetailDao.getById(id);
@@ -100,9 +97,10 @@ public class CartController {
 		orderDetailDao.delete(orderDetail);
 		return "redirect:/account/cart";
 	}
-	
+
 	@PostMapping("/newcart")
 	public String newCart(@RequestParam("quantity") int quantity,@RequestParam("id") int id) {
+		System.out.println("d");
 		Product product = productDao.getById(id);
 		User user= session.get("user");
 		int idCutomer =user.getCutomer().getId();

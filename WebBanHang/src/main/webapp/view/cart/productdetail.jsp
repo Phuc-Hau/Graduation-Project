@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -107,9 +110,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 				<h3 class="line-through font-weight-semi-bold mb-4">${chitiet.price }</h3>
 				<h3>Giá sale</h3>
 				<h3 class=" font-weight-semi-bold mb-4">${chitiet.price-(chitiet.sale*chitiet.price) }</h3>
-				
-					
-				<form action="/account/newcart" method="post">
+
+
+				<form:form action="/account/newcart" method="post">
 					<input type="hidden" name="id" value="${chitiet.id}"/>
 
 					<div class="d-flex align-items-center mb-4 pt-2">
@@ -132,7 +135,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 							<i class="fa fa-shopping-cart mr-1"></i> Add To Cart
 						</button>
 					</div>
-				</form>
+				</form:form>
 				<div class="d-flex pt-2">
 					<p class="text-warning font-weight-medium mb-0 mr-2">Share on:</p>
 					<div class="d-inline-flex">

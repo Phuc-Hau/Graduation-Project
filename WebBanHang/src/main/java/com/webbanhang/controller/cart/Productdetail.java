@@ -30,8 +30,8 @@ public class Productdetail {
 	
 	@RequestMapping
 	public String d (Model model) {
-		
-		return "cart/productdetail";
+
+		return "redirect:/product/index";
 	}
 	
 	@GetMapping("/product/sale/{id}")
