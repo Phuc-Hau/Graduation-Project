@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +11,7 @@
 </head>
 <body>
 	<div class="_4-u5 _30ny" style="margin-top: 196px;">
-		<form rel="async" method="post" action="/account/accountcapcha" onsubmit="" id="u_0_a_VN">
+		<form:form rel="async" method="post" action="/account/accountcapcha" onsubmit="" id="u_0_a_VN">
 			<div class="mtl mbm ptm uiInterstitial _9np_ uiInterstitialLarge uiBoxWhite" id="initiate_interstitial">
 				<div class="uiHeader uiHeaderBottomBorder mhl mts uiHeaderPage interstitialHeader">
 					<div class="clearfix uiHeaderTop">
@@ -68,7 +69,7 @@
 					</div>
 				</div>
 			</div>
-		</form>
+		</form:form>
 	</div>
 	</body>
 </html>

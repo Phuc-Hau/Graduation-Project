@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +10,7 @@
 </head>
 <body>
 	<div class="_4-u5 _30ny" style="margin-top: 196px;">
-		<form method="post" action="/account/datpassword" onsubmit="" id="u_0_a_10">
+		<form:form method="post" action="/account/datpassword" onsubmit="" id="u_0_a_10">
 			
 			<div class="mvl ptm uiInterstitial _9np_ uiInterstitialLarge uiBoxWhite">
 				<div class="uiHeader uiHeaderBottomBorder mhl mts uiHeaderPage interstitialHeader">
@@ -43,7 +44,7 @@
 					</div>
 				</div>
 			</div>
-		</form>
+		</form:form>
 	</div>
 	</body>
 </html>

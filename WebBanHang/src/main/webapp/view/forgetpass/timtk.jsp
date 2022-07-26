@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +11,7 @@
 </head>
 <body>
 	<div class="_4-u5 _30ny" id="login_help" style="margin-top: 196px;">
-		<form rel="async" id="identify_yourself_flow" action="/account/forgetmail" method="post" onsubmit = "return validateForm()">
+		<form:form rel="async" id="identify_yourself_flow" action="/account/forgetmail" method="post" onsubmit = "return validateForm()">
 			<div class="mvl ptm uiInterstitial _9np_ uiInterstitialLarge uiBoxWhite">
 				<div class="uiHeader uiHeaderBottomBorder mhl mts uiHeaderPage interstitialHeader">
 					<div class="clearfix uiHeaderTop">
@@ -49,7 +50,7 @@
 					</div>
 				</div>
 			</div>
-		</form>
+		</form:form>
 	</div>
 	
 </body>

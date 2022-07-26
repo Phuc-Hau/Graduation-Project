@@ -20,7 +20,7 @@ import com.webbanhang.utils.MailerServiceUtils;
 
 @Controller
 @RequestMapping("/account")
-public class SignUpController {
+public class SignUpController extends Thread{
 
 	@Autowired
 	MailerServiceUtils mail;
@@ -44,8 +44,7 @@ public class SignUpController {
 	String capchas = "";
 
 	@PostMapping("/signup/confirm")
-	public String senEmail(Model model, @ModelAttribute("user") User user, @RequestParam("fullname") String fullname)
-			throws MessagingException {
+	public String senEmail(Model model, @ModelAttribute("user") User user, @RequestParam("fullname") String fullname){
 		if (userDao.findByEmail(user.getEmail()) == null) {
 
 			user.setStatus(true);
@@ -60,10 +59,24 @@ public class SignUpController {
 			tymCutomer = cutomer;
 			tymUser = user;
 
+
 			model.addAttribute("email", convenientUtils.emailToStar(user.getEmail()));
 
 			capchas = convenientUtils.ranDomCapCha();
-			mail.sendSignUp(user.getEmail(), capchas);
+
+			Thread t = new Thread(new Runnable() {
+				@Override
+				public void run() {
+					try {
+						mail.sendSignUp(tymUser.getEmail(), capchas);
+					} catch (MessagingException e) {
+						e.printStackTrace();
+					}
+				}
+			});
+
+			t.start();
+
 			model.addAttribute("message", "");
 			return "user/capchasignup";
 		} else {
@@ -71,6 +84,8 @@ public class SignUpController {
 			return "user/dangky";
 		}
 	}
+
+
 
 	@PostMapping("/confirm")
 	public String signUp(Model model, @RequestParam("capcha") String capcha) {
@@ -80,7 +95,8 @@ public class SignUpController {
 				cutomerDao.save(tymCutomer);
 				userDao.save(tymUser);
 			} catch (Exception e) {
-				e.printStackTrace();
+				System.out.println("User da ton tai");
+				return "user/capchasignup";
 			}
 			return "redirect:/account/signin";
 		} else {
